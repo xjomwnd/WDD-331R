@@ -4,38 +4,7 @@ $body-background-color: darkred;
 $form-background-color: white;
 $input-color: white;
 $headlines-color : white;
-body {
-    background: white;
-    @include breakpoint(large) { background: red; }
-    @include breakpoint(medium) { background: cyan; }
-    @include breakpoint(small) { background: green; }
-    @include breakpoint(“max-width: 480px”) { background: yellow; }
-    }  
-    body {
-        background: white;
-    }
-    @media (max-width: 60em) {
-         body {
-            background: red;
-        }
-    }
-    @media (max-width: 31em) {
-        body {
-            background: cyan;
-        }
-    }
-    @media (max-width: 20em) {
-        body {
-            background: green;
-        }
-    }
-    @media (max-width: 480px) {
-        body {
-            background: yellow;
-        }
-    }
-
-          body {
+       body {
             background-color: $body-background-color;          
        }
        #contactform {
@@ -102,8 +71,40 @@ body {
       #content {
           @include center;
       }
+      body {
+        background: white;
+        @include breakpoint(large) { background: red; }
+        @include breakpoint(medium) { background: cyan; }
+        @include breakpoint(small) { background: green; }
+        @include breakpoint(“max-width: 480px”) { background: yellow; }
+        }  
+        body {
+            background: white;
+        }
+        @media (max-width: 60em) {
+             body {
+                background: red;
+            }
+        }
+        @media (max-width: 31em) {
+            body {
+                background: cyan;
+            }
+        }
+        @media (max-width: 20em) {
+            body {
+                background: green;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                background: yellow;
+            }
+        }
+    
 
-      //set breakpoint sizes
+//set breakpoint sizes
+
 $break-small: 20em;
 $break-medium: 31em;
 $break-large: 60em;
