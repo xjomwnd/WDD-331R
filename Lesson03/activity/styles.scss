@@ -90,4 +90,12 @@ $break-large: 60em;
 } @else {
 @media ($break) { @content; }
 }
-}        
+} 
+
+body {
+    background: white;
+    @include breakpoint(large) { background: red; }
+    @include breakpoint(medium) { background: cyan; }
+    @include breakpoint(small) { background: green; }
+    @include breakpoint(“max-width: 480px”) { background: yellow; }
+    }  
