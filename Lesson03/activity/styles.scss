@@ -1,124 +1,94 @@
-/* Variables */
+// Global styles
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+ /* Variables */
 // colors
 $body-background-color: darkred;
 $form-background-color: white;
 $input-color: white;
-$headlines-color : white;
-       body {
-            background-color: $body-background-color;          
-       }
-       #contactform {
-        background-color: $form-background-color;
-        input, textarea {
-            background-color: $input-color;
-            flex: 2;
-        }
-        @media (min-width: $break-small) {
-           & {
-              width: 90%;
-              max-width: 700px;
-              margin-left: auto;
-              margin-right: auto; 
-            } 
-        }
+$headlines-color : white; 
+  
+  body {
+    background-color: darkred;
+  }
+  
+  #contactform > {
+    background-color: white;
+  }
+  #contactform > a:hover {
+    background-color: antiquewhite;
+  }
+  #contactform > input, #contactform > textarea {
+    background-color: white;
+    flex: 2;
+  }
+  @media (min-width: 31em) {
+    #contactform > {
+      width: 90%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
-
-    @mixin flex-container() {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-    }
-
-    fieldset > div {
-        @include flex-container;        
-    }
-    fieldset > div {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-    }
-
-    @mixin flex-container($axis, $wrap: nowrap) {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-flow: $axis $wrap;
-        -ms-flex-flow: $axis $wrap;
-        flex-flow: $axis $wrap;
-    }
-
-    fieldset > div {
-        @include flex-container(column);        
-    }
-    fieldset > div {
-        @include flex-container(row, wrap);        
-    }
-    @mixin center {
+  }
+  @media (min-width: 60em) {
+    #contactform > {
         width: 90%;
         max-width: 960px;
         margin-left: auto;
         margin-right: auto;
-      }
-      #content {
-          @include center;
-      }
-      body {
-        background: white;
-        @include breakpoint(large) { background: red; }
-        @include breakpoint(medium) { background: cyan; }
-        @include breakpoint(small) { background: green; }
-        @include breakpoint(“max-width: 480px”) { background: yellow; }
-        }  
-        body {
-            background: white;
-        }
-        @media (max-width: 60em) {
-             body {
-                background: red;
-            }
-        }
-        @media (max-width: 31em) {
-            body {
-                background: cyan;
-            }
-        }
-        @media (max-width: 20em) {
-            body {
-                background: green;
-            }
-        }
-        @media (max-width: 480px) {
-            body {
-                background: yellow;
-            }
-        }
-    
-
-//set breakpoint sizes
-
-$break-small: 20em;
-$break-medium: 31em;
-$break-large: 60em;
-
-@mixin breakpoint($break) {
-@if $break == large {
-@media (max-width: $break-large) { @content; }
+    }
+  }
+  
+  #contactform fieldset > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+  }
+  #contactform fieldset > div label {
+    flex: 1;
+    text-align: left;
+  }
+******
+  fieldset > div {
+    @include flex-container;        
 }
-@else if $break == medium {
-@media (max-width: $break-medium) { @content; }
+fieldset > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
 }
-@else if $break == small {
-@media (max-width: $break-small) { @content; }
-} @else {
-@media ($break) { @content; }
-}
-} 
+
+  @media (min-width: 31em) {
+    #contactform fieldset > div {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      margin-bottom: 1em;
+    }
+    #contactform fieldset > div label {
+      text-align: right;
+      margin-right: 1em;
+    }
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: white;
+  }
+  
+  /*# sourceMappingURL=styles.css.map */
+  
