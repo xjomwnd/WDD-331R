@@ -1,0 +1,496 @@
+/* ======================================================
+   Styles for BYU-I CIT301B:02 Group 1 ZenGarden project.
+   Group members include: Raia Richards-Peart
+                          Gregory Sargent
+                        
+                          Tyler Wilhelm
+   ======================================================
+*/
+/* Typography partial work by Tyler Wilhelm */
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+/* Colors partial work by Tyler Wilhelm */
+/* Base scss file worked on by everyone */
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+body {
+  display: flex;
+  background: linear-gradient(260deg, white, lightgray);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px; }
+
+/* Header/banner styles partial work by Raia Richards-Peart */
+/* Footer partial work by Gregory Sargent */
+/* Aside partial work by Gregory Sargent */
+body {
+  display: block;
+  background: linear-gradient(260deg, white, lightgray);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px; }
+
+footer {
+  position: absolute;
+  top: 170px;
+  right: 10vw; }
+  footer .zen-validate-html {
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/html5.svg"); }
+  footer .zen-validate-css {
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/css3.svg"); }
+  footer .zen-license {
+    display: inline-block;
+    margin-right: 10px;
+    width: 21px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/creative-commons.svg"); }
+  footer .zen-accessibility {
+    display: inline-block;
+    margin-right: 10px;
+    width: 21px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/accesibility.svg"); }
+  footer .zen-github {
+    display: inline-block;
+    width: 21px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/github.svg"); }
+
+.sidebar {
+  background: linear-gradient(150deg, #79A8FF, #1D4DA7);
+  border-radius: 20px;
+  box-shadow: 0px 30px 100px -25px #000;
+  color: white;
+  font-size: 13px;
+  font-weight: 200;
+  margin: auto;
+  max-width: 540px;
+  padding: 0px 0px 0px 40px; }
+  .sidebar h3 {
+    font-size: 18px;
+    text-transform: uppercase; }
+  .sidebar .wrapper {
+    margin: 0 auto;
+    width: 100%; }
+  .sidebar .design-selection h3 {
+    text-align: center; }
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    -webkit-padding-start: 0px; }
+  .sidebar li {
+    margin-bottom: 35px;
+    margin-right: 75px; }
+  .sidebar a, .sidebar a:visited {
+    text-decoration: none;
+    color: white; }
+  .sidebar .design-name {
+    font-weight: bold;
+    font-size: 18px;
+    display: block; }
+  .sidebar .design-name:before {
+    content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/external-link.svg);
+    margin-right: 12px;
+    margin-left: -27px; }
+  .sidebar .designer-name {
+    font-size: 13px;
+    font-weight: 600; }
+  .sidebar #design-archives h3 {
+    margin-left: 40px;
+    margin-bottom: 30px; }
+  .sidebar #design-archives ul {
+    display: flex;
+    justify-content: flex-start; }
+  .sidebar #design-archives a, .sidebar #design-archives a:visited {
+    display: block;
+    background-color: #E4655F;
+    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 50px -15px black;
+    transition: background 250ms ease; }
+  .sidebar #design-archives a:hover {
+    background-color: #dd3b33; }
+  .sidebar #design-archives .indicator {
+    display: none; }
+
+#zen-resources {
+  display: flex;
+  position: absolute;
+  margin-top: 125px;
+  border-top: 2px solid #B1B1B1;
+  width: 90%;
+  left: 5%;
+  color: black; }
+  #zen-resources h3 {
+    font-size: 15px;
+    font-weight: 300;
+    color: #848484;
+    text-transform: capitalize; }
+  #zen-resources a, #zen-resources a:visited {
+    color: black; }
+
+@media only screen and (max-width: 500px) {
+  .requirements p:last-of-type {
+    background-color: #333333;
+    color: white;
+    float: none;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    text-align: left; }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    bottom: 1;
+    right: none;
+    text-align: center; }
+    footer .zen-validate-html {
+      display: inline-block;
+      margin-right: 10px;
+      width: 20px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/html5.svg"); }
+    footer .zen-validate-css {
+      display: inline-block;
+      margin-right: 10px;
+      width: 20px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/css3.svg"); }
+    footer .zen-license {
+      display: inline-block;
+      margin-right: 10px;
+      width: 21px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/creative-commons.svg"); }
+    footer .zen-accessibility {
+      display: inline-block;
+      margin-right: 10px;
+      width: 21px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/accesibility.svg"); }
+    footer .zen-github {
+      display: inline-block;
+      width: 21px;
+      overflow: hidden;
+      text-indent: -9999px;
+      background-repeat: no-repeat;
+      background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/github.svg"); }
+
+  .sidebar {
+    background: #333333;
+    border-radius: 0;
+    box-shadow: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 200;
+    margin: 0 auto;
+    max-width: none;
+    width: 89vw; }
+    .sidebar h3 {
+      font-size: 18px;
+      text-transform: uppercase; }
+    .sidebar .wrapper {
+      margin: 0 auto;
+      width: 100%; }
+    .sidebar .design-selection h3 {
+      text-align: left;
+      padding-left: 10px;
+      margin-bottom: 50px;
+      margin-top: 50px; }
+    .sidebar ul {
+      display: block;
+      list-style-type: none; }
+    .sidebar li {
+      margin-bottom: 35px;
+      margin-right: 75px; }
+    .sidebar a, .sidebar a:visited {
+      text-decoration: none;
+      color: white; }
+    .sidebar .design-name {
+      font-weight: bold;
+      font-size: 18px;
+      display: block; }
+    .sidebar .design-name:before {
+      content: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1204905/external-link.svg);
+      margin-right: 12px;
+      margin-left: -27px; }
+    .sidebar .designer-name {
+      font-size: 13px;
+      font-weight: 600; }
+    .sidebar #design-archives h3 {
+      margin-left: 40px;
+      margin-bottom: 30px; }
+    .sidebar #design-archives ul {
+      display: flex;
+      justify-content: flex-start; }
+    .sidebar #design-archives a, .sidebar #design-archives a:visited {
+      display: block;
+      width: 70vw;
+      background-color: #E4655F;
+      font-size: 16px;
+      padding: 15px;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 0 5px 50px -15px black;
+      transition: background 250ms ease; }
+    .sidebar #design-archives a:hover {
+      background-color: #dd3b33; }
+    .sidebar #design-archives .indicator {
+      display: none; }
+
+  #zen-resources {
+    display: none; } }
+html {
+  max-width: 100vw; }
+
+/** *****************Peart Section Styling********************** **/
+.intro {
+  padding: 20px; }
+
+#zen-intro {
+  background: #305597;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #305597, #5f8ee4);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #305597, #5f8ee4);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #305597, #5f8ee4);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #305597, #5f8ee4);
+  /* Standard syntax */ }
+
+#zen-intro a, #zen-intro a:visited {
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  display: block;
+  background-color: #e4655f;
+  font-size: 16px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 50px -15px black;
+  transition: background 250ms ease; }
+
+header h1 {
+  margin: 0 auto;
+  color: #e4655f; }
+
+header h2 {
+  background: transparent url(images/h2.gif) no-repeat;
+  margin: 0 auto;
+  height: auto;
+  padding: 4px;
+  text-indent: 100%;
+  display: block;
+  color: transparent; }
+
+header {
+  padding-top: 20px;
+  height: 87px; }
+
+.summary {
+  margin: 0 auto;
+  padding-top: 4%;
+  color: white; }
+
+.preamble {
+  margin: 0 auto;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  color: white; }
+
+.main {
+  width: 95%;
+  margin: auto;
+  padding-top: 20px; }
+  .main div {
+    margin: auto;
+    padding: 2.5%;
+    border-radius: 20px;
+    background-color: rgba(95, 142, 228, 0.5);
+    margin-top: 20px;
+    box-shadow: 0px 10px 5px #888888;
+    max-width: 70%; }
+
+.explanation h3:first-child {
+  text-align: center;
+  width: 45%;
+  height: 40px;
+  line-height: 40px;
+  padding: 5px;
+  background-color: #305597;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 10px 5px #888888; }
+.explanation p {
+  font-size: 14px;
+  padding-right: 5px;
+  color: #ffffff; }
+  .explanation p a {
+    color: #e6e6e6;
+    text-decoration: none; }
+  .explanation p a:hover {
+    color: #305597; }
+
+.participation h3:first-child {
+  text-align: center;
+  width: 45%;
+  height: 40px;
+  line-height: 40px;
+  padding: 5px;
+  background-color: #305597;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 10px 5px #888888; }
+.participation p {
+  font-size: 14px;
+  padding-right: 5px;
+  color: #ffffff; }
+  .participation p a {
+    color: #e6e6e6;
+    text-decoration: none; }
+  .participation p a:hover {
+    color: #305597; }
+
+.benefits h3:first-child {
+  text-align: center;
+  width: 45%;
+  height: 40px;
+  line-height: 40px;
+  padding: 5px;
+  background-color: #305597;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 10px 5px #888888; }
+.benefits p {
+  font-size: 14px;
+  padding-right: 5px;
+  color: #ffffff; }
+  .benefits p a {
+    color: #e6e6e6;
+    text-decoration: none; }
+  .benefits p a:hover {
+    color: #305597; }
+
+.requirements {
+  margin-bottom: 0; }
+  .requirements h3:first-child {
+    text-align: center;
+    width: 45%;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px;
+    background-color: #305597;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 10px 5px #888888; }
+  .requirements p {
+    font-size: 14px;
+    padding-right: 5px;
+    color: #ffffff; }
+    .requirements p a {
+      color: #e6e6e6;
+      text-decoration: none; }
+    .requirements p a:hover {
+      color: #305597; }
+
+footer {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.5%;
+  border-radius: 20px;
+  background-color: rgba(95, 142, 228, 0.5);
+  margin-top: 20px;
+  box-shadow: 0px 10px 5px #888888;
+  max-width: 70%;
+  background-color: #ffffff;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0; }
+
+.sidebar {
+  margin: auto; }
+
+.summary p:nth-child(2) {
+  text-align: center; }
+
+@media only screen and (max-width: 789px) {
+  .main div, .main footer {
+    max-width: 90%; }
+
+  .explanation h3:first-child {
+    text-align: center;
+    width: 45%;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px;
+    background-color: #305597;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 10px 5px #888888; }
+  .explanation p {
+    font-size: 14px;
+    padding-right: 5px;
+    color: #ffffff; }
+    .explanation p a {
+      color: #e6e6e6;
+      text-decoration: none; }
+    .explanation p a:hover {
+      color: #305597; }
+  .explanation h3:first-child {
+    height: 80px; } }
+body {
+  margin: auto;
+  max-width: 100vw; }
+
+/*# sourceMappingURL=style.css.map */
