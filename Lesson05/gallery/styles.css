@@ -249,7 +249,8 @@ body{
 }
 
 @media (pointer:coarse),(pointer:none){
-    .NoResults-shakePrompt{display:block;
+    .NoResults-shakePrompt{
+        display:block;
     }
     .NoResults-chooseRandom{
         display:none;
