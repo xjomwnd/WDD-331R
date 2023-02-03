@@ -17,7 +17,7 @@ body{
     --button-hover-color:var(--blue-2);
     --button-text-color:#fff;
     --panel-background-color:var(--grey-4);
-    --panel-text-color:#fff
+    --panel-text-color:#fff;
 }
 
 .Filter{
@@ -27,13 +27,13 @@ body{
     -webkit-box-sizing:border-box;
     box-sizing:border-box;
     margin:0 auto;
-    padding:0
+    padding:0;
 }
 
 .Filter-iframe,.Filter-input{
     width:100%;
     height:100%;
-    border:none
+    border:none;
 }
 
 .Filter-input{
@@ -46,23 +46,23 @@ body{
     background:transparent;
     -webkit-transition:all .2s ease-in;
     -o-transition:all ease-in .2s;transition:all .2s ease-in;
-    text-align:center
+    text-align:center;
 }
 
 .Filter-input:active,.Filter-input:focus{
     outline:none;
-    background:#fff
+    background:#fff;
 }
 
 .Filter-input::-webkit-input-placeholder{
     font-style:italic;
     font-weight:400;
-    color:var(--input-placholder-color)
+    color:var(--input-placholder-color);
 }
 
 .Filter-input:-ms-input-placeholder,.Filter-input::-ms-input-placeholder{
     font-style:italic;
-    font-weight:400;color:var(--input-placholder-color)
+    font-weight:400;color:var(--input-placholder-color);
 }
 
 .Filter-input::placeholder{
