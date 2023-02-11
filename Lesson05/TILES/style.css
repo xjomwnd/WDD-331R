@@ -1,11 +1,18 @@
-.row-grid > *{
-    border: 1px solid rgb(138, 138, 138);
-    border-radius: 5px;
-    margin: 1em;
+.col-grid > *{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 800px;
+    max-width: 600px;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: center;
 }
 
-.col-grid > * > img{
-    height: 100%;
+.col-grid > *{
+    padding-bottom: 35px;
+    border: 10px #000;
+    border: 1px solid rgb(138. 138, 138);
+    border-radius: 5px;
+    margin: 10px;
 }
