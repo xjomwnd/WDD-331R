@@ -1,0 +1,50 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+html {
+    font-size: 72.5%;
+}
+
+body {
+    background-image: url('../../src/imgs/background-body.jpg');
+
+    font-family: v.$bodyFonts;
+    font-size: 3rem;
+    line-height: 2;
+    margin: 0;
+}
+
+h1 {
+    font-size: 6rem;
+    font-family: v.$h1Fonts;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: v.$h2Fonts;
+    margin: 0;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 1rem;
+}
+
+a {
+    @include m.anchor();
+    color: rgb(0, 81, 255);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
