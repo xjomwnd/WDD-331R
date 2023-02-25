@@ -1,0 +1,21 @@
+section .foter {
+    height: 20rem;
+    text-align: center;
+    background-color: #0E0F11;
+    border: 8px double  white;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    h1 {
+        font-size: 200%;
+        margin-top: 4rem;
+        line-height: 10rem;
+        color: #DFC087;
+    }
+    h2 {
+        color: white;
+    }
+
+}

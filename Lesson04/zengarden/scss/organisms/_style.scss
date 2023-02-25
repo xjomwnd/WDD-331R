@@ -1,0 +1,213 @@
+@use 'normalize';
+@use 'atoms';
+@use 'molecules';
+@use 'organisms';
+// @import '../scss/atoms/index.scss';
+
+// LAYOUT WRAPPER
+.page-wrapper {
+    width: 80%;
+    margin: 2rem auto;
+
+}summay
+
+// LAYOUT SECTION 1
+.intro {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "banner"
+        "summary"
+        "preamble"
+    ;
+}
+
+.banner {
+    grid-area: banner;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    position: relative;
+}
+
+.gear{
+    position: relative;
+    animation: rotation 20s infinite linear;
+}
+@keyframes rotation {
+0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+  }
+
+.summary {
+    grid-area: summary;
+    grid-column: 1 / -1;
+
+    grid-row: 2;
+    @include atoms.backgrounds();
+    position: relative;
+    animation: mymove 10s infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes mymove {
+    from{
+        transform:translateX(20%);
+      }
+      to{
+        transform:translateX(-15%);
+      }
+      
+  }
+
+// .summary:hover{
+//     transform: translateX(-50%);
+//     transition: right 2s, transform 2s;
+// }
+
+.preamble {
+    grid-area: preamble;
+    grid-column: 1 / -1;
+    grid-row: 3;
+    @include atoms.backgrounds();
+    position: relative;
+    animation: mymove2 5s infinite;
+    animation-direction: alternate-reverse;
+}
+// .preamble:hover{
+//     transform: translateX(50%);
+//     transition: right 2s, transform 2s;
+// }
+
+@keyframes mymove2 {
+    from{
+        transform:translateX(10%);
+      }
+      to{
+        transform:translateX(-20%);
+      }
+}
+
+@media (min-width: 1024px) {
+    .banner {
+        grid-area: banner;
+        grid-column: 2 / 9;
+    }
+
+    .summary {
+        grid-area: summary;
+        grid-column: 1 / 6;
+    }
+
+    .preamble {
+        grid-area: preamble;
+        grid-column: 5 / -1;
+
+    }    
+}
+
+
+// LAYOUT SECTION 2
+.main {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "explanation"
+        "participation"
+        "benefits"
+        "requirements"
+        "footer"
+    ;
+}
+
+.explanation {
+    grid-area: explanation;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    @include atoms.backgrounds();
+}
+
+.participation {
+    grid-area: participation;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    @include atoms.backgrounds();
+}
+
+.benefits {
+    grid-area: benefits;
+    grid-column: 1 / -1;
+    grid-row: 3;
+    @include atoms.backgrounds();
+}
+
+.requirements {
+    grid-area: requirements;
+    grid-column: 1 / -1;
+    grid-row: 4;
+    @include atoms.backgrounds();
+}
+
+footer {
+    grid-area: footer;
+    grid-column: 1 / -1;
+    grid-row: 5;
+    background-color: rgb(18, 18, 17);
+    color: rgb(223, 192, 135);
+    height: 100px;
+    text-align: center;
+    background-color: #0E0F11;
+    border: 8px double  white;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+
+}
+
+@media (min-width: 1024px) {
+    .explanation {
+        grid-area: explanation;
+        grid-column: 2 / 9;
+    }
+
+    .participation {
+        grid-area: participation;
+        grid-column: 1 / 6;
+    }
+
+    .benefits {
+        grid-area: benefits;
+        grid-column: 5 / -1;
+    }
+    .requirements {
+        grid-area: requirements;
+        grid-column: 2 / 9;
+    }
+
+    .footer {
+        grid-area: footer;
+        grid-column: 1 / -1;
+        background-color: rgb(18, 18, 17);
+        color: rgb(223, 192, 135);
+    }
+
+}
+
+.sidebar {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "explanation"
+        "participation"
+        "benefits"
+        "requirements"
+        "footer"
+    ;
+}

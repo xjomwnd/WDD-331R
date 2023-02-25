@@ -1,0 +1,57 @@
+@use '../atoms/variables';
+
+section .banner {
+    position: relative;
+    height: 20rem;
+    text-align: center;
+    background-color: #0E0F11;
+    border: 8px double  white;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    h1 {
+        font-size: 200%;
+        margin-top: 4rem;
+        line-height: 10rem;
+        color: #DFC087;
+    }
+    h2 {
+        color: white;
+    }
+
+}
+
+@media (min-width: 1300px) {
+    section .banner {
+        background-image: url('../../src/imgs/background-header.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        height: 50rem;
+        h1 {
+            font-size: 300%;
+            margin-top: 8rem;
+        }
+    
+
+    }
+}
+
+@media (max-width: 600px) {
+    section .banner {
+        height: 15rem;
+        h1 {
+            font-size: 150%;
+            margin-top: 2rem;
+            line-height: 6rem;
+
+        }
+    
+
+    }
+}
+
+
+
