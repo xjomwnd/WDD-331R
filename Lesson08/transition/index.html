@@ -20,6 +20,15 @@ div:hover {
 <h1>The transition-property Property</h1>
 
 <p>Hover over the div element below, to see the transition effect:</p>
+<h2>Selecting all properties</h2>
+<p>transition-property takes a special value: all. When all is specified, any CSS property that changes will be transitioned.</p>
+
+<p>It can be tempting to use this value, as it saves us a good chunk of typing if we're animating multiple properties, but I recommend not using it.</p>
+
+<p>As your product evolves, you (or someone on your team) will likely wind up updating this code at some point in the future. An unexpected animation could slip through.</p>
+
+<p>Animation is like salt: too much of it spoils the dish. It pays to be really precise with the properties we animate.</p>
+
 
 <div></div>
 
