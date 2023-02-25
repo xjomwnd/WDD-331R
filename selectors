@@ -1,0 +1,16 @@
+<h1>Improving my ability to learn how to learn.</h1>
+<h2>Types of Selectors</h2>
+<p>
+The universal selector (*) is a simple selector.
+So are type (or element) selectors such as p and pseudo-element selectors such as ::first-letter.
+Compound selectors, such as p:last-child or .message.error, are a sequence of simple selectors that reflect a set of simultaneous conditions to meet when applying rules to an element. 
+
+From <https://www.sitepoint.com/premium/books/css-master-3rd-edition/read/1/kux8ei35/> 
+
+
+Combinator selectors express a relationship between elements. There are four:
+	• the descendant combinator, as in article p
+	• the child combinator (>), as in .sidebar > h2
+	• the adjacent sibling combinator (+), as in ul + p
+	• the general sibling combinator (~), as in p ~ figure
+</p>
