@@ -1,38 +1,20 @@
 .card {
-    position: relative;
-    width: 300px;
-    height: 450px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
+  width: 200px;
+  height: 300px;
   
-  .card-back {
-    background-color: #fff;
-  }
-  
-  .card-back-pattern {
-    position: absolute;
-    top: 0;
-    left: 0;
+  svg {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, #efefef 0%, #cdcdcd 100%);
-    background-repeat: repeat-y;
-    background-size: 30px 30px;
-    opacity: 0.5;
+    
+    &__back {
+      opacity: 0.5;
+    }
+    
+    &__front {
+      text {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+      }
+    }
   }
-  
-  
-  .card-front {
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .card-front img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
+}

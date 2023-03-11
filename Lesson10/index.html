@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing Card</title>
 </head>
 <body>
-    
-
-<div class="card card-front">
-    <img src="card-front-image.jpg" alt="Card Front">
-  </div>
-  <div class="card card-front">
-    <img src="images/card-01.png" alt="Card Front">
-    <!-- front side content -->
-  </div>
-  
-  <div class="card card-back">
-    <!-- back side content -->
-  </div>
-  <div class="card card-back">
-    <div class="card-back-pattern"></div>
-  </div>  
+  <div class="card">
+    <svg viewBox="0 0 200 300">
+      <g class="card__back">
+        <rect x="0" y="0" width="200" height="300" fill="#000"/>
+      </g>
+      <g class="card__front">
+        <rect x="0" y="0" width="200" height="300" fill="#fff"/>
+        <rect x="10" y="10" width="180" height="280" fill="#f00"/>
+        <text x="100" y="150" text-anchor="middle" font-size="100" fill="#fff">A</text>
+      </g>
+    </svg>
+  </div> 
 </body>
 </html>
