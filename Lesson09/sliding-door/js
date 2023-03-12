@@ -1,0 +1,7 @@
+const sliderDoor = document.querySelector('.slider-door');
+const sliderContent = document.querySelector('.slider-content');
+
+sliderDoor.addEventListener('click', () => {
+  sliderDoor.classList.toggle('slide');
+  sliderContent.classList.toggle('slide');
+});

@@ -1,0 +1,35 @@
+.slider-container {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .slider-door {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ccc;
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slider-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #f2f2f2;
+    z-index: 1;
+    padding: 20px;
+  }
+  .slider-door.slide {
+    transform: translateX(100%);
+  }
+  
+  .slider-content.slide {
+    transform: translateX(-50%);
+  }
