@@ -1,0 +1,73 @@
+$menu-bg: #333; // background color of menu
+$menu-icon-bg: transparent; // background color of menu icon
+$menu-icon-hover-bg: #ccc; // background color of menu icon on hover
+$menu-icon-bar-color: #fff; // color of menu icon bars
+$menu-icon-bar-height: 2px; // height of menu icon bars
+$menu-icon-bar-spacing: 5px; // spacing between menu icon bars
+$menu-transition-time: 0.3s; // transition time for menu
+
+.menu-container {
+  position: relative;
+}
+
+.menu-icon {
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  transition: background-color $menu-transition-time ease-in-out;
+  &:hover {
+    background-color: $menu-icon-hover-bg;
+  }
+  .bar {
+    display: block;
+    width: 100%;
+    height: $menu-icon-bar-height;
+    margin-bottom: $menu-icon-bar-spacing;
+    background-color: $menu-icon-bar-color;
+    transition: transform $menu-transition-time ease-in-out;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &.open {
+    .bar:first-child {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .bar:last-child {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background-color: $menu-bg;
+  transition: height $menu-transition-time ease-in-out;
+  li {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    a {
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      transition: color $menu-transition-time ease-in-out;
+      &:hover {
+        color: $menu-icon-hover-bg;
+      }
+    }
+  }
+  &.open {
+    height: 100%;
+  }
+}
