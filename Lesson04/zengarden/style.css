@@ -46,7 +46,10 @@ Improve consistency of default fonts in all browsers. (https://github.com/sindre
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
+/*//////////animation back ground///*/
 
+
+/*///////////////////////////////////*/
 /*
 Grouping content
 ================
